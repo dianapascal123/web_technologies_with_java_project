@@ -23,4 +23,11 @@ public class Appointment {
         this.id = id;
         this.date = date;
     }
+
+    public Appointment(int id, Date date, Patient patient, Doctor doctor) {
+        this.id = id;
+        this.date = date;
+        this.patient = patient;
+        this.doctor = doctor;
+    }
 }

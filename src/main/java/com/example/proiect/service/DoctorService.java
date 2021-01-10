@@ -22,7 +22,7 @@ public class DoctorService {
     public Doctor createDoctor(Doctor doctor) {
        Hospital hospital = hospitalService.getHospitalByName(doctor.getHospital().getName());
        doctor.setHospital(hospital);
-        return doctorRepository.createDoctor(doctor);
+       return doctorRepository.createDoctor(doctor);
     }
 
     public Doctor getDoctorByName(String firstName, String lastName) {

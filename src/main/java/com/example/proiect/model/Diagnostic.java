@@ -23,4 +23,14 @@ public class Diagnostic {
 
     public Diagnostic() {
     }
+
+    public Diagnostic(int id, String name, Patient patient, Date startDate, Date endDate) {
+        this.id = id;
+        this.name = name;
+        this.patient = patient;
+        this.startDate = startDate;
+        this.endDate = endDate;
+    }
+
+
 }

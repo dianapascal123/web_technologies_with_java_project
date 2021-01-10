@@ -24,7 +24,6 @@ public class DiagnosticService {
 
         diagnostic.setPatient(patient);
 
-
         return diagnosticRepository.createDiagnostic(diagnostic);
     }
 
