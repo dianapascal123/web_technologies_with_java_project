@@ -25,6 +25,16 @@ public class Patient {
         this.height = height;
     }
 
+    public Patient(int id, String firstName, String lastName, String CNP, Date birthdate, double weight, double height) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.CNP = CNP;
+        this.birthdate = birthdate;
+        this.weight = weight;
+        this.height = height;
+    }
+
     public Patient() {
     }
 }

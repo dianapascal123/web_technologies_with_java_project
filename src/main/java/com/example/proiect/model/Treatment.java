@@ -21,6 +21,14 @@ public class Treatment {
         this.endDate = endDate;
     }
 
+    public Treatment(int id, String medicine, Diagnostic diagnostic, Date startDate, Date endDate) {
+        this.id = id;
+        this.medicine = medicine;
+        this.diagnostic = diagnostic;
+        this.startDate = startDate;
+        this.endDate = endDate;
+    }
+
     public Treatment() {
     }
 }
