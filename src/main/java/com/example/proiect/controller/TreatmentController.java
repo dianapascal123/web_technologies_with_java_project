@@ -4,6 +4,7 @@ import com.example.proiect.dto.TreatmentRequest;
 import com.example.proiect.mapper.TreatmentMapper;
 import com.example.proiect.model.Treatment;
 import com.example.proiect.service.TreatmentService;
+import io.swagger.annotations.Api;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -18,6 +19,8 @@ import java.net.URI;
 @RestController
 @Validated
 @RequestMapping("/treatments")
+@Api(value = "/treatments", tags = "Treatments")
+
 public class TreatmentController {
     TreatmentService treatmentService;
     TreatmentMapper treatmentMapper;

@@ -4,6 +4,7 @@ import com.example.proiect.dto.PatientRequest;
 import com.example.proiect.mapper.PatientMapper;
 import com.example.proiect.model.Patient;
 import com.example.proiect.service.PatientService;
+import io.swagger.annotations.Api;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -18,6 +19,8 @@ import javax.validation.Valid;
 @RestController
 @Validated
 @RequestMapping("/patients")
+@Api(value = "/patients", tags = "Patients")
+
 public class PatientController {
     private PatientService patientService;
     private PatientMapper patientMapper;

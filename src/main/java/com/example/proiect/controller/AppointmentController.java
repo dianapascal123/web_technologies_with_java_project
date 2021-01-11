@@ -5,6 +5,7 @@ import com.example.proiect.dto.AppointmentUpdate;
 import com.example.proiect.mapper.AppointmentMapper;
 import com.example.proiect.model.Appointment;
 import com.example.proiect.service.AppointmentService;
+import io.swagger.annotations.Api;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -16,6 +17,7 @@ import java.net.URI;
 @RestController
 @Validated
 @RequestMapping("/appointments")
+@Api(value = "/appointments", tags = "Appointments")
 public class AppointmentController {
     private AppointmentService appointmentService;
     private AppointmentMapper appointmentMapper;
